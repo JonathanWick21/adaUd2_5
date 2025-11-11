@@ -16,7 +16,7 @@ public class Cliente implements Runnable{
     @Override
     public void run() {
         Random random = new Random();
-        int tiempo = random.nextInt(400, 800) + 1;
+        int tiempo = random.nextInt(1000, 2000) + 1;
         System.out.println("El cliente " +  nombre +  " entrara en " + tiempo / 1000 + " segundos");
         try {
             Thread.sleep(tiempo);

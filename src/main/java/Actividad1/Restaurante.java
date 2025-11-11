@@ -37,7 +37,7 @@ public class Restaurante {
             System.out.println("El cliente " + nomCliente + " se ha sentado en la mesa " + mesalibre.get());
         }
         Random random = new Random();
-        int espera = random.nextInt(2000, 3000) + 1;
+        int espera = random.nextInt(4000, 6000) + 1;
         try {
             Thread.sleep(espera);
         } catch (InterruptedException e) {
@@ -70,7 +70,7 @@ public class Restaurante {
             hilo.start();
 
             try {
-                Thread.sleep(1000); // cada 0.4 s llega un nuevo cliente
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
